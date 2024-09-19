@@ -36,4 +36,22 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
+}
+
+class Student extends Person {
+    String major;
+
+    public Student(String name, int age, String major) {
+        super(name, age);
+        this.major = major;
+    }
+
+    @Override
+    public String toString() {
+        return "Person.Student{" +
+                "major='" + major + '\'' +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
 }
